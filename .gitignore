@@ -137,3 +137,25 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Next.js specific
+.next/
+out/
+build/
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Uploads directory
+uploads/
+
+# Prisma
+prisma/migrations/
