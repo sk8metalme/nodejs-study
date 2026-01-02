@@ -1,0 +1,33 @@
+// Shared Constants
+// アプリケーション全体で共有される定数
+
+export const APP_NAME = 'Slack Learning App';
+export const APP_DESCRIPTION = 'Node.js学習用Slackクローンアプリケーション';
+
+export const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
+export const ALLOWED_FILE_TYPES = [
+  'image/jpeg',
+  'image/png',
+  'image/gif',
+  'application/pdf',
+  'text/plain',
+];
+
+export const PAGINATION_DEFAULTS = {
+  LIMIT: 50,
+  MAX_LIMIT: 100,
+};
+
+export const ERROR_CODES = {
+  AUTH_REQUIRED: 'AUTH_REQUIRED',
+  INVALID_CREDENTIALS: 'INVALID_CREDENTIALS',
+  SESSION_EXPIRED: 'SESSION_EXPIRED',
+  INSUFFICIENT_PERMISSIONS: 'INSUFFICIENT_PERMISSIONS',
+  WORKSPACE_ACCESS_DENIED: 'WORKSPACE_ACCESS_DENIED',
+  INVALID_INPUT: 'INVALID_INPUT',
+  MISSING_REQUIRED_FIELD: 'MISSING_REQUIRED_FIELD',
+  RESOURCE_NOT_FOUND: 'RESOURCE_NOT_FOUND',
+  WORKSPACE_NOT_FOUND: 'WORKSPACE_NOT_FOUND',
+  INTERNAL_SERVER_ERROR: 'INTERNAL_SERVER_ERROR',
+  DATABASE_ERROR: 'DATABASE_ERROR',
+} as const;
